@@ -1,83 +1,78 @@
-# 📦 Smart Inventory Management System
+# Inventory Management System (PHP & MySQL)
 
-### 🏗 Project Overview
-The **Smart Inventory Management System** is a comprehensive solution for efficiently tracking and managing inventory. It leverages modern technologies to provide real-time stock updates, prevent overstocking or stockouts, and optimize warehouse operations.
+## Overview
 
-## 🚀 Features
-- 🔍 **Real-time Inventory Tracking** – Keeps records up-to-date instantly.
-- 📊 **Data Analytics & Reporting** – Provides insights into stock movement.
-- 📦 **Automatic Stock Alerts** – Sends notifications for low stock.
-- 🏷 **Barcode/QR Code Scanning** – Simplifies inventory logging.
-- 📁 **Multi-user Role Management** – Admins, managers, and employees have different access levels.
-- 🌐 **Web-based Dashboard** – User-friendly interface accessible from anywhere.
-- 🔄 **Seamless Integration** – Can connect with external ERP and POS systems.
+The **Inventory Management System** is a web-based application built using **PHP, MySQL, JavaScript, and Bootstrap** to efficiently manage inventory, track stock levels, and generate reports. It allows businesses to streamline their inventory tracking, reduce errors, and optimize stock control.
 
-## 🛠 Tech Stack
-- **Frontend**: HTML, CSS, JavaScript, React.js (if applicable)
-- **Backend**: Python (Flask/Django/FastAPI)
-- **Database**: MySQL / PostgreSQL / MongoDB
-- **Authentication**: JWT / OAuth / Firebase Auth
-- **Cloud & Hosting**: AWS / Firebase / Heroku (as applicable)
+## Features
 
-## ⚙️ Installation
+- **User Authentication**: Secure login and user role management with Admin, Special User, and Employee roles.
+- **Admin Panel**: Full control over the system, including user management and inventory tracking.
+- **Special User Panel**: Access to product and media management.
+- **Employee Panel**: Sales record management and report viewing.
+- **Product Management**: Add, edit, and delete products.
+- **Category Management**: Organize products into categories.
+- **Stock Management**: Update stock levels and track inventory movements.
+- **Sales & Purchase Tracking**: Log sales and purchases with timestamps.
+- **Reporting**: Generate detailed sales reports (daily, weekly, and monthly).
+- **Media Management**: Upload and attach images to products.
+- **Responsive Design**: Fully responsive UI using Bootstrap for an enhanced user experience.
 
-### 🔽 Prerequisites
-Ensure you have the following installed:
-- Python 3.8+
-- Node.js (if frontend uses React/Vue)
-- MySQL/PostgreSQL (Ensure database setup)
+## Technologies Used
 
-### 🔧 Setup Guide
-```bash
-# Clone the repository
-git clone https://github.com/Sufiyan71/Smart-Inventory-Management-system.git
-cd Smart-Inventory-Management-system
+- **Frontend**: HTML, CSS, JavaScript, Bootstrap
+- **Backend**: PHP (Core PHP, MySQLi for database interaction)
+- **Database**: MySQL
+- **Libraries**: DataTables, Chart.js for analytics
 
-# Install backend dependencies
-pip install -r requirements.txt
+## Installation Guide
 
-# Run the backend server
-python app.py  # or flask run / uvicorn main:app --reload
-```
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/Sufiyan71/Smart-Inventory-Management.git
+   ```
+2. **Setup Database**
+   - Create a database in MySQL.
+   - Import the provided `DATABASE FILE/inventory.sql` into your database using phpMyAdmin.
+3. **Configure Database Connection**
+   - Open `config.php`.
+   - Update database credentials:
+     ```php
+     $servername = "localhost";
+     $username = "root";
+     $password = "";
+     $dbname = "inventory_db";
+     ```
+4. **Start the Server**
+   - Use XAMPP, WAMP, or MAMP to run Apache and MySQL.
+   - Place the project folder in the `htdocs` directory (for XAMPP users).
+   - Access the system at `http://localhost/[ENTER_PROJECT_FOLDER_NAME_HERE]`
 
-If there's a frontend:
-```bash
-# Navigate to frontend directory
-cd frontend
+## Usage
 
-# Install dependencies
-npm install
+1. **Login**: Use the default admin credentials (provided in `01 LOGIN DETAILS & PROJECT INFO.txt`).
+2. **Manage Inventory**: Add categories, products, and stock levels.
+3. **Track Transactions**: Log purchases and sales.
+4. **Generate Reports**: View inventory reports with analytics.
+5. **Media Management**: Upload product images for better organization.
 
-# Run the frontend app
-npm start
-```
+## System Requirements
 
-## 📸 Screenshots (Optional)
-_Add relevant UI screenshots here to showcase the application._
+- PHP version **5.6.3** (or compatible)
+- MySQL database
+- Apache server (XAMPP, WAMP, or MAMP recommended)
+- Web browser (Google Chrome, Mozilla Firefox recommended)
 
-## 📜 API Endpoints (If applicable)
-| Method | Endpoint | Description |
-|--------|----------|--------------|
-| GET | `/inventory` | Get all inventory items |
-| POST | `/inventory/add` | Add a new item |
-| PUT | `/inventory/update/:id` | Update item details |
-| DELETE | `/inventory/delete/:id` | Remove an item |
+## Future Enhancements
 
-## 🛡 Security & Authentication (If applicable)
-- JWT-based authentication
-- Role-based access control (RBAC)
+- Barcode scanner integration.
+- Role-based access control (RBAC) improvements.
+- Automated email notifications for low stock.
+- Multi-language support.
+- Advanced analytics dashboard.
 
-## 🤝 Contributing
-1. Fork the repository.
-2. Create a new branch (`feature-xyz`).
-3. Commit changes (`git commit -m 'Add new feature'`).
-4. Push the branch (`git push origin feature-xyz`).
-5. Open a Pull Request.
+## License
 
-## 📜 License
 This project is licensed under the **MIT License**.
 
----
-🔗 **GitHub Repository**: [Smart Inventory Management System](https://github.com/Sufiyan71/Smart-Inventory-Management-system)
 
-💬 **Contact**: [LinkedIn](https://www.linkedin.com/in/sufiyan-sheikh-0088a724a) | [GitHub](https://github.com/Sufiyan71)
